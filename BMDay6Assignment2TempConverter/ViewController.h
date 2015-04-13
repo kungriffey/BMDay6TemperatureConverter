@@ -14,6 +14,7 @@
 
 - (IBAction)convertButtonPressed:(UIButton *)sender;
 - (IBAction)textFieldReturn:(id)sender;
+- (IBAction)convertBackButtonPressed:(UIButton *)sender;
 
 @end
 

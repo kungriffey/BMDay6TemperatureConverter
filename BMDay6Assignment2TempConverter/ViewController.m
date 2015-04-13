@@ -44,6 +44,17 @@
   [sender resignFirstResponder];
 }
 
+- (IBAction)convertBackButtonPressed:(UIButton *)sender {
+
+  double celsius = [self.temperatureLabel.text doubleValue];
+  double farenheit = (celsius * 1.8) + 32;
+  
+  NSString *resultString = [[NSString alloc]initWithFormat:@"The Temperature is  is %.2f F", farenheit];
+  self.convertedLabel.text = resultString;
+  
+  [self.temperatureLabel resignFirstResponder];
+}
+
 //hide keyboard when whitespace is pressed
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
   
