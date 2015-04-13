@@ -9,7 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+@property (strong, nonatomic) IBOutlet UITextField *temperatureLabel;
+@property (strong, nonatomic) IBOutlet UILabel *convertedLabel;
 
+- (IBAction)convertButtonPressed:(UIButton *)sender;
+-(IBAction)textFieldReturn:(id)sender;
 
 @end
 
